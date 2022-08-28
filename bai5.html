@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 5</title>
+</head>
+<body>
+<script>
+    let numArr = [];
+    let elements = +prompt('input elements of sequence :');
+    let cnt = 0;
+    for (let i = 0; i < elements; i++) {
+        numArr[i] = Math.floor(-20 + Math.random() * 40 + 1);
+        if (numArr[i] < 0) {
+            cnt += 1;
+        }
+    }
+    console.log(numArr);
+    document.write('The amount of negative integers is ' + cnt)
+
+
+</script>
+</body>
+</html>
